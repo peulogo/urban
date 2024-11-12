@@ -35,10 +35,8 @@ class RunnerTest(unittest.TestCase):
         runner1 = Runner('Adel1')
         for i in range(10):
             runner.run()
-            runner.walk()
-            runner1.run()
             runner1.walk()
-        self.assertEqual(runner.distance, runner1.distance)
+        self.assertNotEqual(runner.distance, runner1.distance)
 
 
 if __name__ == '__main__':
