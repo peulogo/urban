@@ -9,7 +9,7 @@ import asyncio
 
 initiate_db()
 
-api = '7777011691:AAE_Xwde827Hfec4pJq9lWW1YBJiM89WMpM'
+api = ''
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
